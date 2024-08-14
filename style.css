@@ -1,103 +1,135 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    color: rgb(0, 0, 0);
-    margin: auto auto;
-    margin-top: 10%;
-    height: fit-content;
-    width: fit-content;
-    font-family: "Quicksand"
+  color: rgb(0, 0, 0);
+  margin: auto auto;
+  margin-top: 10%;
+  height: fit-content;
+  width: fit-content;
+  font-family: "Quicksand";
+  font-size: 1rem;
 }
 
-.signin{
-    color: brown;
-    text-align: center;
-    margin-top: -50px;
+.signin {
+  color: brown;
+  text-align: center;
+  margin-top: -50px;
 }
 
-.subtext{
-    margin-top: -10px;
-    margin-bottom: 30px;
-    text-align: center;
+.subtext {
+  margin-top: -10px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 input {
-    display: block;
-    border: none;
-    border-bottom: 0.5px solid brown;
-    width: 100%;
-    margin : 10px 0px 25px 0px;
-    padding: 2px 0px;
-    font-size: medium ;
+  display: block;
+  border: none;
+  border-bottom: 0.5px solid brown;
+  width: 100%;
+  margin: 10px 0px 25px 0px;
+  padding: 2px 0px;
+  font-size: medium;
 }
 input:focus {
-    outline: none;
+  outline: none;
 }
 form {
-    font-weight: 700;
+  font-weight: 700;
 }
 
-.nini{
-    background-color: rgb(255, 255, 255);
-    border: 2px solid whitesmoke;
-    border-radius: 5%;
-    padding: 100px;
-    box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.13);
+.nini {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid whitesmoke;
+  border-radius: 5%;
+  padding: 100px;
+  box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.13);
 }
 
-.submit-button{
-    font-family: inherit;
-    padding: 5% 43%;
-    background-color: brown;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    font-weight: 700;
+.submit-button {
+  font-family: inherit;
+  padding: 5% 39%;
+  background-color: brown;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
 }
-
+#terms-and-condition {
+    margin-top: 25px;
+}
 .tand {
-    display: inline-flex;
-    justify-content: center;
-    align-items: flex-start;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.tandc{
-    display: flex;
-    margin-top: -3.5px;
+.tandc {
+  display: flex;
+  margin-top: -3.5px;
 }
 
 .tandc a {
-    text-decoration: none;
-    color: brown;
+  text-decoration: none;
+  color: brown;
 }
 
-.checkbox{
-    background-color: brown;
+.checkbox {
+  background-color: brown;
 }
 
-.signup-button-align{
-    color: brown;
-    /* padding-top: 10px; */
+.signup-button-align {
+  color: brown;
+  /* padding-top: 10px; */
 }
 
-.dhaa{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between ;
-    font-weight: 700;
-    
+.dhaa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+}
+.popup {
+  visibility: hidden;
+  width: 40%;
+  box-shadow: 2px 2px 10px black;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 10px;
+  position: fixed;
+  top: 50px;
+  border-radius: 10px 0 0 10px;
+  right: 0;
+  z-index: 1;
+}
+.popup h1 {
+    color: red;
+    text-transform: capitalize;
+}
+.show {
+  visibility: visible;
+  animation: fadeIn 0.5s;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-@media (max-width: 414px){
-    .nini{
-        background-color: rgb(255, 255, 255);
-        border: 2px solid whitesmoke;
-        border-radius: 2%;
-        padding: 30px;
-        width: 80%;
-        margin: 0 auto;
-        box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.13);
-    }
+@media (max-width: 414px) {
+  .nini {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid whitesmoke;
+    border-radius: 2%;
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.13);
+  }
 }
