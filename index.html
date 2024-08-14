@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
+    <title>Sign in | Testing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p>
-        Sign in
-    </p>
+    <div class="nini">
+        <h1 class="signin">Sign In</h1>
+        <p class="subtext">Hi there! Nice to see you again</p>
+        <form>
+            Username <input type="text" required>
+            Password <input type="password" required>
+            <div class="tandc">
+                <div>
+                    <input type="checkbox" name="terms and condition" id="terms and condition" class="checkbox" required> 
+                </div>
+                <div class="tandc">
+                    <p>&nbsp I agree to the &nbsp</p>
+                    <a href="#"><p>terms</p></a>
+                    <p>&nbsp and &nbsp</p>
+                    <a href="#"><p>condition</p></a>
+                </div> 
+            </div>
+            <button class="submit-button">
+                Sign in
+            </button>
+
+        </form>
+    </div>
 </body>
+
 </html>
