@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign in | Testing</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="nini">
-        <h1 class="signin">Sign In</h1>
-        <p class="subtext">Hi there! Nice to see you again</p>
-        <form>
-            Username <input type="text" name="username">
-            <p id="error-username"></p>
-            Password <input type="password" name="password">
-            <p id="error-password"></p>
+      <h1 class="signin">Sign In</h1>
+      <p class="subtext">Hi there! Nice to see you again</p>
+      <form id="loginForm">
+        <p id="main-error"></p>
+        Username <input type="text" name="username" />
+        <p id="error-username"></p>
+        Password <input type="password" name="password" />
+        <p id="error-password"></p>
 
-            <div class="tand">
-                <div>
-                    <input type="checkbox" name="terms and condition" id="terms and condition" class="checkbox" required>
-
-                </div>
-                <div class="tandc">
-                    <p>&nbsp I agree to the &nbsp</p>
-                    <a href="#">
-                        <p>terms</p>
-                    </a>
-                    <p>&nbsp and &nbsp</p>
-                    <a href="#">
-                        <p>condition</p>
-                    </a>
-                </div>
-            </div>
-            <button class="submit-button">
-                Sign in
-            </button>
-        </form>
-        <div class="dhaa">
-            <p>Don't have an account?</p>
-            <a href="#" class="signup-button-align">Sign Up</a>
-
+        <div class="tand">
+          <div>
+            <input
+              type="checkbox"
+              name="terms and condition"
+              id="terms-and-condition"
+              class="checkbox"
+            />
+          </div>
+          <div class="tandc">
+            <p>&nbsp I agree to the &nbsp</p>
+            <a href="#">
+              <p>terms</p>
+            </a>
+            <p>&nbsp and &nbsp</p>
+            <a href="#">
+              <p>condition</p>
+            </a>
+          </div>
         </div>
+        <p id="checkbox-error" style="color: red"></p>
+        <button class="submit-button">Sign in</button>
+      </form>
+      <div id="popup" class="popup">
+        <h1 style="color: red">error</h1>
+        <p>Invalid credentials</p>
+        <p>Check username and password</p>
+        <p>Enter a valid username and password</p>
+      </div>
 
+      <div class="dhaa">
+        <p>Don't have an account?</p>
+        <a href="#" class="signup-button-align">Sign Up</a>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

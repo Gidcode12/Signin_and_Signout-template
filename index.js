@@ -1,7 +1,9 @@
-const formElement = document.querySelector("form")
-const errorPassword = document.getElementById("error-password")
-const errorUsername = document.getElementById("error-username")
-console.log(errorPassword)
+const formElement = document.querySelector("form");
+const errorPassword = document.getElementById("error-password");
+const errorUsername = document.getElementById("error-username");
+const checkboxErrorMessage = document.getElementById("checkbox-error");
+const checkBox = document.getElementById("terms-and-condition");
+console.log(errorPassword);
 formElement.addEventListener("submit", function (event) {
     errorPassword.textContent = ""
     errorUsername.textContent = ""
@@ -24,3 +26,9 @@ formElement.addEventListener("submit", function (event) {
         return
     }
 })
+
+
+
+
+
+// some changessss

@@ -1,0 +1,36 @@
+// validation for username and password
+// const formElement = document.querySelector("form");
+// const errorPassword = document.getElementById("error-password");
+// const errorUsername = document.getElementById("error-username");
+// const mainError = document.getElementById("main-error");
+//   validation
+//     errorPassword.textContent = "";
+//     errorUsername.textContent = "";
+//     mainError.textContent = "";
+//     event.preventDefault();
+//     const formData = new FormData(event.target);
+//     const userName = formData.get("username");
+//     const password = formData.get("password");
+//     mainError.style.color = "red";
+//     errorUsername.style.color = "red";
+//     errorPassword.style.color = "red";
+//     if (!userName || !password) {
+//       if ((!userName && password) || userName.trim().length < 10) {
+//         errorUsername.innerHTML =
+//           "please enter a valid username <br/> username must be at least ten characters! ";
+
+//         return;
+//       }
+//       if (!password && userName && userName.trim().length > 9) {
+//         errorPassword.textContent = "please enter a valid password!";
+//         return;
+//       }
+//       errorUsername.textContent = "please enter a valid username! ";
+//       errorPassword.textContent = "please enter a valid password!";
+//       return;
+//     }
+
+//     if (password.trim().length < 6) {
+//       errorPassword.textContent = "password must be at least 6 chracters!";
+//       return;
+//     }
