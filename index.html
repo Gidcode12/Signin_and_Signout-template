@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -16,24 +17,37 @@
         <h1 class="signin">Sign In</h1>
         <p class="subtext">Hi there! Nice to see you again</p>
         <form>
-            Username <input type="text" required>
-            Password <input type="password" required>
-            <div class="tandc">
+            Username <input type="text" name="username">
+            <p id="error-username"></p>
+            Password <input type="password" name="password">
+            <p id="error-password"></p>
+
+            <div class="tand">
                 <div>
-                    <input type="checkbox" name="terms and condition" id="terms and condition" class="checkbox" required> 
+                    <input type="checkbox" name="terms and condition" id="terms and condition" class="checkbox" required>
+
                 </div>
                 <div class="tandc">
                     <p>&nbsp I agree to the &nbsp</p>
-                    <a href="#"><p>terms</p></a>
+                    <a href="#">
+                        <p>terms</p>
+                    </a>
                     <p>&nbsp and &nbsp</p>
-                    <a href="#"><p>condition</p></a>
-                </div> 
+                    <a href="#">
+                        <p>condition</p>
+                    </a>
+                </div>
             </div>
             <button class="submit-button">
                 Sign in
             </button>
-
         </form>
+        <div class="dhaa">
+            <p>Don't have an account?</p>
+            <a href="#" class="signup-button-align">Sign Up</a>
+
+        </div>
+
     </div>
 </body>
 

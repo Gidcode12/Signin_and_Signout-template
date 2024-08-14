@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     color: rgb(0, 0, 0);
     margin: auto auto;
@@ -52,13 +55,15 @@ form {
     font-weight: 700;
 }
 
+.tand {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 .tandc{
     display: flex;
-    margin-top: -10px;
-}
-.tandc p, .tandc p{
-    margin-top: 8px;
+    margin-top: -3.5px;
 }
 
 .tandc a {
@@ -68,5 +73,31 @@ form {
 
 .checkbox{
     background-color: brown;
-    margin-top: -1px;
+}
+
+.signup-button-align{
+    color: brown;
+    /* padding-top: 10px; */
+}
+
+.dhaa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between ;
+    font-weight: 700;
+    
+}
+
+
+@media (max-width: 414px){
+    .nini{
+        background-color: rgb(255, 255, 255);
+        border: 2px solid whitesmoke;
+        border-radius: 2%;
+        padding: 30px;
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.13);
+    }
 }
